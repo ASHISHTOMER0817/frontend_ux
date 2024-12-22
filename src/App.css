@@ -1,0 +1,278 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.display_flex{
+  display: flex;
+}
+
+.space_around{
+  justify-content: space-around;
+}
+
+.flex_spread{
+  justify-content: stretch;
+}
+
+.box_shadow{
+  box-shadow: 0px 3px 10px -5px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.padding_20{
+  padding-top: 20px;
+}
+
+/* .auth_buttons {
+  display: flex;
+  width: 100%;
+  max-width: 80%;
+  gap: 10px;
+  margin-top: 20px;
+} */
+
+.auth-button {
+  font-weight: 600;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_section_border{
+  border:1px solid #D5D7DA;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+/* chatgpt css */
+
+/* General Styles */
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.left-section {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.info-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ai-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a1f44;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  color: #6b7280;
+}
+
+.info-list li {
+  margin: 8px 0;
+}
+
+.stats-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.stats-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.stats h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.stats h2 {
+  font-size: 32px;
+  color: #0a1f44;
+  margin: 10px 0 0;
+}
+
+.growth {
+  text-align: right;
+  font-size: 14px;
+  color: #1d4ed8;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.logo-image {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-size: 18px;
+  color: #6b7280;
+  margin: 10px 0;
+}
+
+.tabs {
+  display: flex;
+  margin: 20px 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f4f6f8;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  margin: 0 5px;
+}
+
+.tab.active {
+  background-color: #0a1f44;
+  color: white;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.auth-button {
+  font-weight: 600;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_icon_right_margin{
+  margin-right: 4px;
+}
+
+.auth-button i {
+  margin-right: 10px;
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+.privacy-text a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+
+
+
+.upper_part_right_section{
+  border: 1px solid #D5D7DA;
+  border-radius: 15px;
+}
+ */
