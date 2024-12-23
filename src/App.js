@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import { useState } from "react";
 import logo from "./assets/icons/logo.svg";
 import smLogo from "./assets/icons/smLogo.svg";
 import pieChart from "./assets/icons/pieChart.svg";
@@ -6,100 +7,162 @@ import github from "./assets/icons/github.svg";
 import bitbucket from "./assets/icons/bitbucket.svg";
 import azureDevops from "./assets/icons/azureDevops.svg";
 import gitlab from "./assets/icons/gitlab.svg";
+import hugeLogo from "./assets/icons/hugeLogo.svg";
+import upArrow from "./assets/icons/upArrow.svg";
+import sso from "./assets/icons/sso.svg";
 import "./App.css";
 
 function App() {
+	const [auth, setAuth] = useState("SAAS");
+	console.log(auth)
 	return (
-		<div className="App">
-			<section>
-				<div className="box_shadow">
+		<div className="App h-100vh position_relative">
+			<img
+				src={hugeLogo}
+				alt="huge_logo"
+				className="position_absolute left_0 bottom_0"
+			/>
+			<section className="flex-1 display_flex home_page_left_section ">
+				<div className="box_shadow position_relative radius_24">
 					<div className="display_flex">
 						<img src={smLogo} alt="logo" />
-						<h5>AI to Detect & Autofix Bad Code</h5>
+						<div>AI to Detect & Autofix Bad Code</div>
 					</div>
-					<div className="display_flex">
+					<div className="display_flex gap_10">
 						<div>
-							<h5>30+</h5>
-							<div>Language Support</div>
+							<div className="font_size_18 bold">
+								30+
+							</div>
+							<div className="font_size_14">
+								Language Support
+							</div>
 						</div>
 						<div>
-							<h5>10K+</h5>
-							<div>Developers</div>
+							<div className="font_size_18 bold">
+								10K+
+							</div>
+							<div className="font_size_14">
+								Developers
+							</div>
 						</div>
 						<div>
-							<h5>100K+</h5>
-							<div>Hours Saved</div>
+							<div className="font_size_18 bold">
+								100K+
+							</div>
+							<div className="font_size_14">
+								Hours Saved
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className=" display_flex space_around">
-					<div >
-						<div>
-							<h6 className="bold">Issues Fixed</h6>
-							<h3 className="bold">500K+</h3>
-							<img src={pieChart} alt="pie_chart" />
-						</div>
+					<div className="box_shadow display_flex position_absolute top_100 flex_wrap radius_24">
+						{/* <div className="display_flex"> */}
+						<img src={pieChart} alt="pie_chart" />
 						<div>
 							<div>
-								<img src="" alt="Up_sign" />
+								<img
+									src={upArrow}
+									alt="Up_sign"
+								/>
 								<div>14%</div>
 							</div>
-							<div className="font-size">This week</div>
+							<div className="font-size">
+								This week
+							</div>
 						</div>
+						<div>
+							<h6 className="">Issues Fixed</h6>
+							<h3 className="">500K+</h3>
+						</div>
+						{/* </div> */}
 					</div>
 				</div>
 			</section>
-			<section>
-				<div className="right_section_border">
-					<div>
-						<div>
-							<img src={logo} alt="logo" />
-							<h4>CodeAnt AI</h4>
-						</div>
-						<div></div>
-						<div className="display_flex ">
-							<button>SAAS</button>
-							<button>Self Hosted</button>
-						</div>
+			<section className="flex-1 background_color_FAFAFA home_page_right_section">
+				{/* <div className="right_section_border background_color_white ml-8 mr-8 border_bottom"> */}
+				<div className="right_section_border background_color_white ml-8 mr-8 border_bottom_radius_0 border_top_radius_10">
+					<div className="display_flex header_padding_6px justify_center">
+						<img src={logo} alt="logo" />
+						<h4>CodeAnt AI</h4>
 					</div>
-					<div className="">
-						<button className="auth-button">
-							<img
-								className="login_icon_right_margin"
-								src={github}
-								alt="github"
-							/>{" "}
-							Sign in with GitHub
+					<div className="header_padding_2px">
+						Welcome to CodeAnt AI
+					</div>
+					<div className="display_flex ">
+						<button
+							onClick={() => setAuth("SAAS")}
+							className={`auth-button toggle-button ${auth === "SAAS" ? "bg_blue color_white" : "color_414651 bg_white"}`}
+						>
+							SAAS
 						</button>
-						<button className="auth-button">
-							<img
-								className="login_icon_right_margin"
-								src={bitbucket}
-								alt="bitbucket"
-							/>{" "}
-							Sign in with Bitbucket
-						</button>
-						<button className="auth-button">
-							<img
-								className="login_icon_right_margin"
-								src={azureDevops}
-								alt="azureDevops"
-							/>{" "}
-							Sign in with Azure DevOps
-						</button>
-						<button className="auth-button">
-							<img
-								className="login_icon_right_margin"
-								src={gitlab}
-								alt="gitlab"
-							/>{" "}
-							Sign in with GitLab
+						<button
+							onClick={() => setAuth("self Hosted")}
+							className={`auth-button toggle-button ${auth !== "SAAS" ? "bg_blue color_white" : "color_414651 bg_white"}`}
+						>
+							Self Hosted
 						</button>
 					</div>
 				</div>
+				<div className="right_section_border display_flex background_color_white ml-8 mr-8 border_top_radius_0 border_bottom_radius_10">
+					{auth === "SAAS" ? (
+						<>
+							<button className="auth-button min_width_75 bg_white">
+								<img
+									className="login_icon_right_margin"
+									src={github}
+									alt="github"
+								/>{" "}
+								Sign in with GitHub
+							</button>
+							<button className="auth-button min_width_75 bg_white">
+								<img
+									className="login_icon_right_margin"
+									src={bitbucket}
+									alt="bitbucket"
+								/>{" "}
+								Sign in with Bitbucket
+							</button>
+							<button className="auth-button min_width_75 bg_white">
+								<img
+									className="login_icon_right_margin"
+									src={azureDevops}
+									alt="azureDevops"
+								/>{" "}
+								Sign in with Azure DevOps
+							</button>
+							<button className="auth-button min_width_75 bg_white">
+								<img
+									className="login_icon_right_margin"
+									src={gitlab}
+									alt="gitlab"
+								/>{" "}
+								Sign in with GitLab
+							</button>
+						</>
+					) : (
+						<>
+							<button className="auth-button min_width_75">
+								<img
+									className="login_icon_right_margin"
+									src={gitlab}
+									alt="gitlab"
+								/>{" "}
+								Self hosted GitLab
+							</button>
+							<button className="auth-button min_width_75">
+								<img
+									className="login_icon_right_margin"
+									src={sso}
+									alt="SSO"
+								/>{" "}
+								Sign in with Azure DevOps
+							</button>
+						</>
+					)}
+				</div>
+				{/* </div> */}
 				<div className="padding_20">
 					By signing up you agree to the{" "}
-					<span className="bold">Privacy Policy</span>{" "}
+					<span className="">Privacy Policy</span>{" "}
 				</div>
 			</section>
 		</div>
