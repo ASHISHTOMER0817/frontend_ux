@@ -22,13 +22,13 @@ function App() {
 				alt="huge_logo"
 				className="position_absolute left_0 bottom_0"
 			/>
-			<section className="flex-1 display_flex home_page_left_section ">
+			<section className="flex-1 home_page_left_section m_homepage_left_section ">
 				<div className="box_shadow position_relative radius_24">
-					<div className="display_flex">
+					<div className="display_flex border_bottom_E6E8F0 p_20">
 						<img src={smLogo} alt="logo" />
-						<div>AI to Detect & Autofix Bad Code</div>
+						<div className="bold font_size_18">AI to Detect & Autofix Bad Code</div>
 					</div>
-					<div className="display_flex gap_10">
+					<div className="gap_60 p_20 display_flex ">
 						<div>
 							<div className="font_size_18 bold">
 								30+
@@ -54,7 +54,7 @@ function App() {
 							</div>
 						</div>
 					</div>
-					<div className="box_shadow display_flex position_absolute top_100 flex_wrap radius_24">
+					<div className="box_shadow display_flex position_absolute flex_wrap radius_24 w_50 p_20 flex_wrap left_side_absolute_element_position bg_white row_gap_10 column_gap_10">
 						{/* <div className="display_flex"> */}
 						<img src={pieChart} alt="pie_chart" />
 						<div>
@@ -63,15 +63,15 @@ function App() {
 									src={upArrow}
 									alt="Up_sign"
 								/>
-								<div>14%</div>
+								<div className="color_0049C6">14%</div>
 							</div>
 							<div className="font-size">
 								This week
 							</div>
 						</div>
-						<div>
-							<h6 className="">Issues Fixed</h6>
-							<h3 className="">500K+</h3>
+						<div className="text_align_left">
+							<div className="font_size_14 bold">Issues Fixed</div>
+							<div className="font_size_32 bold">500K+</div>
 						</div>
 						{/* </div> */}
 					</div>
@@ -90,13 +90,13 @@ function App() {
 					<div className="display_flex ">
 						<button
 							onClick={() => setAuth("SAAS")}
-							className={`auth-button toggle-button ${auth === "SAAS" ? "bg_blue color_white" : "color_414651 bg_white"}`}
+							className={`auth-button toggle-button m_toggle_button ${auth === "SAAS" ? "bg_blue color_white" : "color_414651 bg_white"}`}
 						>
 							SAAS
 						</button>
 						<button
 							onClick={() => setAuth("self Hosted")}
-							className={`auth-button toggle-button ${auth !== "SAAS" ? "bg_blue color_white" : "color_414651 bg_white"}`}
+							className={`auth-button toggle-button m_toggle_button ${auth !== "SAAS" ? "bg_blue color_white" : "color_414651 bg_white"}`}
 						>
 							Self Hosted
 						</button>

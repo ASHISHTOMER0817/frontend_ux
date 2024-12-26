@@ -6,11 +6,7 @@ html {
   box-sizing: inherit;
 }
 
-@media (max-width: 767px) {
-  .home_page_left_section {
-    display: none;
-  }
-}
+
 .color_414651{
   color: #414651;
 }
@@ -137,8 +133,9 @@ html {
   font-weight: 700 !important;
   padding: 12px 16px !important;
   flex: 1;
-
 }
+
+
 
 .flex-1 {
   flex: 1;
@@ -231,15 +228,60 @@ html {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p_20{
+  padding: 20px;
 }
 
+.gap_60{
+  gap: 60px;
+}
+
+.border_bottom_E6E8F0{
+  border-bottom: 1px solid #E6E8F0;
+}
+
+.w_50{
+  width: 50%;
+}
+
+.flex_wrap{
+  flex-wrap: wrap;
+}
+
+.color_0049C6{
+  color: #0049C6;
+}
+
+.font-size_32{
+  font-size: 32px;
+}
+
+.text-align_left{
+  text-align: left;
+}
+.left_side_absolute_element_position{
+  bottom: -160%;
+  transform: translate(-50%, -50%);
+  right: -30%;
+}
+
+.row_gap_10{
+  gap: 10px;
+}
+
+.column_gap_40{
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .m_homepage_left_section {
+    display: none;
+  }
+  .m_toggle_button{
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+}
 
 
 
