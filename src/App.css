@@ -120,12 +120,9 @@ html {
 .background_color_white{
   background-color: white;
 }
-.header_padding_6px{
-  padding: 6px;
-}
 
-.header_padding_2px{
-  padding: 2px;
+.header_margin{
+  margin: 14px 0%;
 }
 
 .toggle-button {
@@ -134,8 +131,6 @@ html {
   padding: 12px 16px !important;
   flex: 1;
 }
-
-
 
 .flex-1 {
   flex: 1;
@@ -280,6 +275,9 @@ html {
   .m_toggle_button{
     font-size: 14px !important;
     padding: 10px !important;
+  }
+  .auth_options{
+    align-items: stretch;
   }
 }
 

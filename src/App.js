@@ -54,11 +54,11 @@ function App() {
 							</div>
 						</div>
 					</div>
-					<div className="box_shadow display_flex position_absolute flex_wrap radius_24 w_50 p_20 flex_wrap left_side_absolute_element_position bg_white row_gap_10 column_gap_10">
+					<div className="box_shadow display_flex position_absolute flex_wrap radius_24 w_50 p_20 flex_wrap left_side_absolute_element_position bg_white row_gap_10 column_gap_40">
 						{/* <div className="display_flex"> */}
 						<img src={pieChart} alt="pie_chart" />
 						<div>
-							<div>
+							<div className="display_flex">
 								<img
 									src={upArrow}
 									alt="Up_sign"
@@ -80,11 +80,11 @@ function App() {
 			<section className="flex-1 background_color_FAFAFA home_page_right_section">
 				{/* <div className="right_section_border background_color_white ml-8 mr-8 border_bottom"> */}
 				<div className="right_section_border background_color_white ml-8 mr-8 border_bottom_radius_0 border_top_radius_10">
-					<div className="display_flex header_padding_6px justify_center">
+					<div className="display_flex justify_center">
 						<img src={logo} alt="logo" />
 						<h4>CodeAnt AI</h4>
 					</div>
-					<div className="header_padding_2px">
+					<div className="header_margin">
 						Welcome to CodeAnt AI
 					</div>
 					<div className="display_flex ">
@@ -102,7 +102,7 @@ function App() {
 						</button>
 					</div>
 				</div>
-				<div className="right_section_border display_flex background_color_white ml-8 mr-8 border_top_radius_0 border_bottom_radius_10">
+				<div className="right_section_border auth_options display_flex background_color_white ml-8 mr-8 border_top_radius_0 border_bottom_radius_10">
 					{auth === "SAAS" ? (
 						<>
 							<button className="auth-button min_width_75 bg_white">
