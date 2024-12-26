@@ -322,7 +322,7 @@ html {
       }
 }
 
-@media (min-width:767){
+@media (min-width:767px){
       .hide_dropdown_icons{
             display: none;
       }

@@ -281,6 +281,17 @@ html {
   }
 }
 
+.gap_16{
+  gap: 16px;
+}
+
+.font_size_30{
+  font-size: 30px;
+}
+
+.align_center{
+  align-items: center;
+}
 
 
 

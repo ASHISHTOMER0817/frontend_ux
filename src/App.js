@@ -80,9 +80,9 @@ function App() {
 			<section className="flex-1 background_color_FAFAFA home_page_right_section">
 				{/* <div className="right_section_border background_color_white ml-8 mr-8 border_bottom"> */}
 				<div className="right_section_border background_color_white ml-8 mr-8 border_bottom_radius_0 border_top_radius_10">
-					<div className="display_flex justify_center">
+					<div className="display_flex justify_center gap_16 align_center">
 						<img src={logo} alt="logo" />
-						<h4>CodeAnt AI</h4>
+						<div className="font_size_30">CodeAnt AI</div>
 					</div>
 					<div className="header_margin">
 						Welcome to CodeAnt AI

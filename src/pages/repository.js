@@ -137,7 +137,7 @@ const Repository = () => {
 						<div
 							key={index}
 							className={`sidebar_options p_10 radius_8 ${!menuOpen ? "display_none": '' }  ${
-								index === 5 && menuOpen ? "mt_auto m_mt_none" : ""
+								index === 5 && !menuOpen ? "mt_auto" :  menuOpen ? " m_mt_none" : ""
 							} ${
 								index === 0 && !menuOpen
 									? "bg_color_blue color_white"
